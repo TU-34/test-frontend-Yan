@@ -1,0 +1,94 @@
+
+        @font-face {
+            font-family: "Isidora";
+            src: local("Isidora Light"), local("Isidora-Light"),
+                url("../fonts/Isidora-Light.woff2") format("woff2");
+            unicode-range: U+000-5FF;
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Isidora";
+            src: local("Isidora Medium"), local("Isidora-Medium"),
+                url("../fonts/Isidora-Medium.woff2") format("woff2");
+            unicode-range: U+000-5FF;
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Isidora";
+            src: local("Isidora Bold"), local("Isidora-Bold"),
+                url("../fonts/Isidora-Bold.woff2") format("woff2");
+            unicode-range: U+000-5FF;
+            font-weight: 700;
+            font-style: bold;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "icomoon";
+            src: url("../ostx_files/icomoon2.woff") format("woff");
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'icomoon';
+            src: url("../ostx_files/icomoon.eot");
+            src: url("../ostx_files/icomoon.eot") format("embedded-opentype"), url("../ostx_files/icomoon.ttf") format("truetype"), url("../ostx_files/icomoon.woff") format("woff"), url("../ostx_files/icomoon.svg") format("svg");
+            font-weight: normal;
+            font-style: normal;
+        }
+        .a3mod_player {
+            padding-top: 0 !important;
+        }
+        .adom-button {
+            width: 400px;
+            max-width: 90%;
+            margin: 0 auto 30px;
+            text-align: center;
+            padding: 20px 40px;
+            border: 1px solid rgb(129, 13, 0);
+            background-color: red;
+            color: #fff;
+            border-radius: 50px;
+            display: block;
+            font-weight: 700;
+            box-shadow: 0 4px 15px 0 rgb(129 150 160 / 45%);
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+        .adom-button:hover {
+            background-color: rgb(200, 0, 0);
+            color: #fff;
+        }
+        .tet {
+            padding: 10px;
+            border-left: 7px solid #8903ab;
+            border-top: none;
+            border-right: none;
+            border-bottom: none;
+            font-style: italic;
+        }
+        .autor-area {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            background-color: #d0d0d0;
+            border-radius: 22px;
+        }
+
+        .autor-img {
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            .autor-area {
+                flex-direction: column;
+            }
+        }

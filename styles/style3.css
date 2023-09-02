@@ -1,0 +1,115 @@
+
+		#_notifyDiv {
+			width: 100%;
+			max-width: 430px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 10000001;
+			display: none;
+		}
+
+		body.preNotify #_notifyDiv {
+			display: block;
+		}
+
+		#_notifyDiv ._not_base {
+			background-color: #fff;
+			border: 1px solid #e6e6e6;
+			margin: 15px;
+			padding: 19px 29px;
+			position: relative;
+			text-align: center;
+			box-shadow: 0 0 0.9rem rgba(0, 0, 0, 0.4);
+		}
+
+		#_notifyDiv ._not_but,
+		#_notifyDiv ._not_close {
+			cursor: pointer
+		}
+
+		#_notifyDiv ._not_buts {
+			text-align: center;
+			margin: 25px 0 14px;
+		}
+
+		#_notifyDiv ._not_but {
+			text-transform: uppercase;
+			margin-right: 15px;
+			font-size: 16px;
+			line-height: 16px;
+			color: #fff;
+			padding: 10px 0;
+			width: 130px;
+			text-align: center;
+			background-color: #999;
+			display: inline-block;
+			font-weight: 600;
+		}
+
+		#_notifyDiv ._not_activate {
+			background-color: #ec663b;
+		}
+
+		#_notifyDiv ._not_now {
+			margin: 0;
+		}
+
+		#_notifyDiv ._not_but:hover {
+			opacity: 0.6
+		}
+
+		#_notifyDiv ._not_close {
+			font-size: 20px;
+			padding: 10px;
+			position: absolute;
+			right: 9px;
+			top: 10px;
+			color: #aaa
+		}
+
+		#_notifyDiv ._not_logo {
+			background-image: url(images/favicon-96x96.png);
+			background-size: 48px 48px;
+			width: 48px;
+			height: 48px;
+			position: absolute;
+			left: 0;
+			top: 4px;
+		}
+
+		#_notifyDiv ._not_block {
+			font-size: 14px;
+			color: #333;
+			line-height: 20px;
+			padding: 0px 25px 0px 75px;
+			height: 60px;
+			display: table;
+			position: relative;
+		}
+
+		#_notifyDiv ._not_text {
+			display: table-cell;
+			vertical-align: middle;
+			text-align: left
+		}
+
+		#_notifyDiv ._not_link {
+			color: #0099ff;
+			font-size: 13px;
+		}
+
+		@media only screen and (max-width: 767px) {
+			#_notifyDiv {
+				max-width: 400px
+			}
+
+			#_notifyDiv ._not_base {
+				margin: 7px
+			}
+
+			#_notifyDiv ._not_but {
+				width: 45%
+			}
+		}
+	

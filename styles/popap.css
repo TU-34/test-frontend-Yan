@@ -1,0 +1,91 @@
+#popup{
+    position: fixed;/*фиксированное позиционирование*/
+    top: -100%;/*прячем окно за пределы видимости*/
+    left: 50%;/*позиция окна слева*/
+    transform: translate(-50%,-50%);
+    z-index: 1000;/*на верхний слой*/
+    background: #fff;
+    width: 450px;
+    padding: 80px 50px 50px;
+    /* box-shadow: 0 15px 30px rgba(0,0,0,0.08); */
+    /* box-shadow: 0px 4px 40px 18px rgba(0, 0, 0, 0.50); */
+    box-shadow: 0 0 0.9rem rgb(0 0 0 / 40%);
+    /* box-shadow: 4px 9px 5px 0px rgb(50 50 50 / 75%); */
+    transition: 0.5s;
+    visibility: hidden;/*скрываем окно*/
+}
+#popup.active{
+    visibility: visible;/*показываем окно*/
+    top: 50%;/*окно выдвигается сверху*/
+}
+#popup .content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;/*направление главной оси*/
+}
+/* #popup .content img{
+    max-width: 80px;
+} */
+#popup .content h2{
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+    margin: 20px 0 10px;
+}
+#popup .content p{
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+}
+#popup .content .buttonBox{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#popup .content .buttonBox a{
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 15px;
+    outline: none;
+    font-size: 18px;
+    max-width: 200px;
+    background: red;
+    color: #fff;
+    border: none;
+
+}
+
+#popup .content .inputBox a:hover{
+   
+    background: rgb(175, 7, 7);
+   
+   
+}
+.close{
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+@media (max-width: 520px){
+
+    #popup{
+        width: 300px;
+        padding: 40px 20px 20px;
+
+
+    }
+}
+
+
+
